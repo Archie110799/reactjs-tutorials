@@ -1,10 +1,10 @@
 import React from "react";
+import Intro from "./Intro";
 
 function JSX() {
-  const name = "Josh Perez";
   return (
     <>
-      <h1>Hello, {name}</h1>
+      <Intro></Intro>
     </>
   );
 }
