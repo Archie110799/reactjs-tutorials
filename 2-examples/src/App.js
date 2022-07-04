@@ -5,8 +5,8 @@ import JSX from './Examples/JSX'
 function App() {
   return (
     <>
-      {/* <JSX></JSX> */}
-      <ES6></ES6>
+      <JSX></JSX>
+      {/* <ES6></ES6> */}
     </>
   );
 }
