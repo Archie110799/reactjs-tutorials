@@ -7,28 +7,51 @@ function Counter() {
   const timer = useRef(null);
 
   // Updating: Lifecycle
+
+  //Effect
+  //Clean up (in return)
   useEffect(() => {
-    // component mount
+    //every
+    // component didmount, didupdate
     console.log('🔥Component update');
   });
 
+  useEffect(() => {
+    // ONCE - ONLY execute once after FIRST RENDER
+    // component didmount
+    console.log('🔥Component mounting');
+    // useRef value stored in .current property
+
+    // ASYNC Example
+    // async function getData(){
+
+    // }
+    // getData();
+
+  }, []); //Dependencies
+
   //
   useEffect(() => {
-    // component mount
+    // ONCE - ONLY execute once after FIRST RENDER
+    // component didmount
     console.log('🔥Component mounting');
     // useRef value stored in .current property
     timer.current = setInterval(() => {
       console.log('Timer running');
       setCount((v) => v + 1);
     }, 1000);
+
+    // clear on component willUnmount
+    return () => {
+      //execute before the next effect or unmount
+      clearInterval(timer.current);
+    };
   }, []); //Dependencies
 
   useEffect(() => {
-    // clear on component unmount
-    return () => {
-      clearInterval(timer.current);
-    };
-  }, []);
+    //On demand
+    //ONLY execute once after FIRST RENDER or "count" state change
+  },[count])
 
   return (
     <div>
