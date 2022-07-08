@@ -7,6 +7,8 @@ import Countdown from './Examples/LifecycleExamples/Countdown'
 import EventHandlerExamples from './Examples/EventHandlerExamples'
 import ConditionalRenderingExamples from './Examples/ConditionalRenderingExamples'
 import LifecyleHookExamples from './Examples/LifecyleHookExamples'
+import StateFunction from './Examples/State/stateFunction'
+import StateClass from './Examples/State/stateClass'
 
 function App() {
   return (
@@ -14,7 +16,9 @@ function App() {
       {/* <JSX /> */}
       {/* <ES6 /> */}
       {/* <Session02 /> */}
-      <LifecycleExample />
+      <StateFunction />
+      <StateClass />
+      {/* <LifecycleExample /> */}
       {/* <Countdown /> */}
       {/* <LifecyleHookExamples /> */}
       {/* <EventHandlerExamples /> */}
