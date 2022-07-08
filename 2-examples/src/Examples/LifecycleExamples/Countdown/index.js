@@ -8,7 +8,7 @@ class Countdown extends PureComponent {
     super(props);
 
     //properties
-    this.DEFAULT_MAX_SECOND = 1000
+    this.DEFAULT_MAX_SECOND = 0
 
     // state
     this.state = {
@@ -25,7 +25,7 @@ class Countdown extends PureComponent {
     // update state
     this.timer = setInterval(() => {
       this.setState((prevState) => ({
-        currentSecond: prevState.currentSecond - 1,
+        currentSecond: prevState.currentSecond + 1,
       }));
     }, 1000);
   }
