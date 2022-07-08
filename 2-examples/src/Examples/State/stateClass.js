@@ -8,13 +8,29 @@ export default class StateClass extends Component {
     this.state = {
       color: "Black",
     };
+
+    this.setColor = this.setColor.bind(this);
   }
+
+  setColor() {
+    this.setState({ color: "blue" });
+  }
+
+  setColor1 = (event) => {
+    this.setState({ color: "Black" });
+  };
+
   render() {
+    function handleClick(e) {
+      e.preventDefault();
+    }
     return (
       <div>
         {this.state.color}
-        <button onClick={() => this.setState({color : 'Black'})}>Change Black</button>
-        <button onClick={() => this.setState({color : 'Red'})}>Change Red</button>
+        <button onClick={this.setColor}>Change Black</button>
+        <button onClick={() => this.setState({ color: "Red" })}>
+          Change Red
+        </button>
       </div>
     );
   }

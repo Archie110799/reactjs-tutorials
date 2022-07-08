@@ -46,6 +46,11 @@ class LifecycleExample extends Component {
           {this.state.showComponent ? "ON" : "OFF"}
         </button>
 
+        {(this.state.data < 3) && <p>Be</p>}
+        {(this.state.data >= 3) && <p>Lon</p>}
+
+        {!this.state.showComponent && <p>OFF</p>}
+
         {this.state.showComponent && <ChildComponent myNumber={this.state.data}></ChildComponent>}
       </div>
     );

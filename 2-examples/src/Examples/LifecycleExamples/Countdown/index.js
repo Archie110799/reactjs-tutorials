@@ -4,11 +4,11 @@ import React, { PureComponent } from "react";
 
 class Countdown extends PureComponent {
   constructor(props) {
-    // Goi ham khoi tao cua tk Cha (extends Component)
+    // Goi ham khoi tao cua tk Cha (extends PureComponent)
     super(props);
 
     //properties
-    this.DEFAULT_MAX_SECOND = 0
+    this.DEFAULT_MAX_SECOND = 100
 
     // state
     this.state = {
@@ -18,14 +18,13 @@ class Countdown extends PureComponent {
     // bindding event
     // this.setNewNumber = this.setNewNumber.bind(this);    
   }
-
   componentDidMount() {
     // call API 
     // send tracking Google Analytics
     // update state
     this.timer = setInterval(() => {
       this.setState((prevState) => ({
-        currentSecond: prevState.currentSecond + 1,
+        currentSecond: prevState.currentSecond - 1,
       }));
     }, 1000);
   }
@@ -50,6 +49,7 @@ class Countdown extends PureComponent {
 
   render() {
     const { currentSecond } = this.state;
+    // const currentSecond = this.state.currentSecond
     return <div>{currentSecond}</div>;
   }
 }
