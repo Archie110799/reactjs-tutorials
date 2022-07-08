@@ -110,6 +110,11 @@ class ChildComponent extends React.Component {
   }
 
   componentWillUnmount() {
+    // 1 lan
+    // Chuyen trang
+    // Reset data tren redux
+    // Clear timeout or interval trc khi component bi huy bo
+
     console.log("Component WILL UNMOUNT!");
   }
 

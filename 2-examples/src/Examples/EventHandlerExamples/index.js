@@ -9,7 +9,7 @@ function EventHandlerExamples() {
   const [playing, setPlaying] = React.useState(false);
   const refPlayer = React.useRef();
   return (
-    <div>
+    <div style={{width:500, textAlign:'center', margin:'auto'}}>
       <Disc imageUrl='assets/Song-Xa-Anh-Chang-De-Dang-Bao-Anh.jpeg' playing={playing} />
 
       <Slider

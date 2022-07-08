@@ -9,6 +9,7 @@ function Disc({ imageUrl, playing }) {
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
+          margin: 'auto',
           height: 300,
           width: 300,
           borderRadius: '50%',

@@ -4,15 +4,19 @@ import JSX from './Examples/JSX'
 import Session02 from './Homeworks/Session02'
 import LifecycleExample from './Examples/LifecycleExamples'
 import Countdown from './Examples/LifecycleExamples/Countdown'
+import EventHandlerExamples from './Examples/EventHandlerExamples'
+import ConditionalRenderingExamples from './Examples/ConditionalRenderingExamples'
 
 function App() {
   return (
     <>
-      {/* <JSX></JSX> */}
-      {/* <ES6></ES6> */}
-      {/* <Session02></Session02> */}
-      {/* <LifecycleExample></LifecycleExample> */}
-      <Countdown></Countdown>
+      {/* <JSX />
+      <ES6 />
+      <Session02 />
+      <LifecycleExample />
+      <Countdown /> */}
+      <EventHandlerExamples />
+      {/* <ConditionalRenderingExamples /> */}
     </>
   );
 }
