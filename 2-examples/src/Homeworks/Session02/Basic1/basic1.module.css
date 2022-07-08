@@ -1,0 +1,38 @@
+
+.card_zone{
+  position: relative;
+  margin: 2rem auto;
+  width: 400px;
+  height: 200px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.div_image{
+  position: absolute;
+  width: 50%;
+}
+
+.div_image img {
+  width: 90%;
+  object-fit: contain;
+}
+
+.div_info{
+  position: absolute;
+  width: 50%;
+  left: 50%;
+  top:10%;
+  text-align: left;
+}
+
+.div_info span{
+  display: block;
+  margin: 5px;
+}
+
+.info_title{
+  font-weight: 700;
+  font-size: 20px;
+}

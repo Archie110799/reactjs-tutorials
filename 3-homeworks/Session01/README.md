@@ -1,3 +1,6 @@
+# GIT
+Document: (https://git-scm.com/docs)
+
 # Hướng dẫn làm bài tập
 
 1. Tại ở đĩa D, tạo thư mục Reactjs

@@ -1,0 +1,12 @@
+.div__bar4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    margin: auto;
+}
+.column{
+    display: block;
+    height: 50px;
+    width: 50px;
+}
