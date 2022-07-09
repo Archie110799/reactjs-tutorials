@@ -17,7 +17,6 @@ function App() {
     <>
       {/* <JSX /> */}
       {/* <ES6 /> */}
-      {/* <Session02 /> */}
       {/* <StateFunction /> */}
       {/* <StateClass /> */}
       {/* <LifecycleExample /> */}
@@ -26,7 +25,8 @@ function App() {
       {/* <EventHandlerExamples /> */}
       {/* <EventHandler /> */}
       {/* <ConditionalRenderingExamples /> */}
-      <Session03/>
+      <Session02 />
+      {/* <Session03/> */}
     </>
   );
 }

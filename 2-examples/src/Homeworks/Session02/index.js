@@ -15,14 +15,14 @@ function Session02() {
       <hr />
       <Basic2_S2 /> */}
 
-      {/* <hr />
+      <hr />
       <ChartBar text='BANDWIDTH' color1='#E44D4C' color2='#F75354' percentage={50} />
       <ChartBar text='STORAGE' color1='#2DB8CD' color2='#2DB8CD' percentage={50} />
       <ChartBar text='USERS' color1='#4AC25E' color2='#51D567' percentage={70} />
-      <ChartBar text='VISITORS' color1='#E9C318' color2='#FCD518' percentage={30} /> */}
+      <ChartBar text='VISITORS' color1='#E9C318' color2='#FCD518' percentage={30} />
 
-      {/* <hr />
-      <ChartBar2 text='a' color='red' iconName='bi bi-star' percentage={50}/> */}
+      <hr />
+      <ChartBar2 text='a' color='red' iconName='bi bi-star' percentage={70}/>
 
       {/* <hr />
       <Block3 text='Facebook' total={24599} iconName='FaFacebookF' /> */}
