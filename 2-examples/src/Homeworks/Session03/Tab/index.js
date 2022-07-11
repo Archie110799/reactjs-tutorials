@@ -33,6 +33,7 @@ function Tab({ tabs = defaultTabs }) {
           const isActiveTab = index === selectedTabIndex;
           return (
             <button
+              key={index}
               onClick={() => {
                 setSelectedTabIndex(index);
               }}
@@ -51,7 +52,7 @@ function Tab({ tabs = defaultTabs }) {
       <div className={styles.tab_content}>
         {tabs.map((item, index) => {
           if (index === selectedTabIndex) {
-            return <div>{item.content}</div>;
+            return <div key={index}>{item.content}</div>;
           }
           return null;
         })}

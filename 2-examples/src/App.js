@@ -28,7 +28,7 @@ function App() {
       {/* <EventHandler /> */}
       {/* <ConditionalRenderingExamples /> */}
       {/* <Session02 /> */}
-      {/* <Session03/> */}
+      <Session03/>
      
     </>
   );

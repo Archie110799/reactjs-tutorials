@@ -6,7 +6,7 @@ function LikeButton() {
   const [like, setLike] = React.useState(false);
 
   return (
-    <div>
+    <h1>
       {like && (
         <AiFillLike
           onClick={() => {
@@ -21,7 +21,7 @@ function LikeButton() {
           }}
         />
       )}
-    </div>
+    </h1>
   );
 }
 

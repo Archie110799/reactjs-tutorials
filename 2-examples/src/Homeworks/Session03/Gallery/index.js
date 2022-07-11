@@ -9,7 +9,7 @@ function Gallery() {
   let imagePath = `/images/${index}.jpeg`;
 
   return (
-    <div>
+    <div className="my-3 mx-auto w-50">
       <img className={styles.image_big} src={imagePath} alt='' />
       <div className={styles.button_container}>
         <button

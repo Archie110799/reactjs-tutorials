@@ -19,6 +19,7 @@ function HandleEvent() {
           setSubject(e.target.value);
         }}
       >
+        <option value=''></option>
         <option value='REACT'>React</option>
         <option value='NODEJS'>Nodejs</option>
       </select>
@@ -32,7 +33,7 @@ function HandleEvent() {
       <h1>{text}</h1>
       <h1>{subject}</h1>
 
-      {checked && <div style={{ height: 200, width: 500, backgroundColor: 'yellow' }}>Please read me</div>}
+      {checked && <div className='w-50 mx-auto' style={{ height: 200, width: 500, backgroundColor: 'yellow' }}>Please read me</div>}
     </div>
   );
 }
