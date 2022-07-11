@@ -3,7 +3,7 @@ import { AiFillLike, AiOutlineLike } from 'react-icons/ai';
 
 function LikeButton() {
   // State
-  const [like, setLike] = React.useState(false);
+  const [like, setLike] = React.useState(false); 
 
   return (
     <h1>

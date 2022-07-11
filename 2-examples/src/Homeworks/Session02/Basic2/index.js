@@ -16,8 +16,8 @@ export default function Basic2_S2() {
     let content = [];
 
     for (let index = 0; index < star; index++) {
-      // content.push(<AiFillStar/>);
-      content.push(<i class="bi bi-star-fill"></i>);
+      content.push(<AiFillStar/>);
+      // content.push(<i class="bi bi-star-fill"></i>);
     }
 
     for (let index = star; index < 5; index++) {

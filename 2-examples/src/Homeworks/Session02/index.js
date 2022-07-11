@@ -10,10 +10,10 @@ import Basic1_S2 from './Basic1';
 function Session02() {
   return (
     <div>
-      {/* <Basic1_S2 />
+      <Basic1_S2 />
 
       <hr />
-      <Basic2_S2 /> */}
+      <Basic2_S2 />
 
       <hr />
       <ChartBar text='BANDWIDTH' color1='#E44D4C' color2='#F75354' percentage={50} />

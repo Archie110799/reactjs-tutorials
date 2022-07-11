@@ -9,7 +9,7 @@ function HandleEvent() {
     <div>
       <input
         onChange={(e) => {
-          console.log(e.target.value);
+          console.log('a',e.target.value);
           setText(e.target.value);
         }}
       />
