@@ -1,11 +1,19 @@
 import React, { useState, useRef, useEffect } from 'react';
 
+// Hook là một hàm đặc biệt cho phép bạn sử dụng các tính năng của React
+// (mà không cần phải tạo class)
 function Counter() {
   // Sử dụng state
   const [count, setCount] = useState(0);
 
   const timer = useRef(null);
 
+  // useEffect cho phép chúng ta sử lý logic trong lifecycle methods. 
+  // Từ cái tên useEffect chắc chúng ta cũng hiểu được hàm sẽ được gọi mỗi khi 
+  // có gì đó ảnh hưởng đến components của bạn. 
+  // Và thực sự nó giống với định nghĩa của 
+  // componentDidMount và componentDidUpdate.
+  
   // Updating: Lifecycle
 
   //Effect

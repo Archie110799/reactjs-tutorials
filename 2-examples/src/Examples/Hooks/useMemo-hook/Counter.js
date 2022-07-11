@@ -25,6 +25,13 @@ function WithoutMemoCounter() {
   const calculation = React.useMemo(() => {
     return expensiveFunction(count);
   }, [count]);
+  // Bắt buộc call thì count thay đổi
+
+  // Data không đổi sau những lần re-render, trả về mảng đầu tiên tạo ra
+  // Nó sẽ tạo ra function này đúng 1 lần đầu, 
+  // những lần re-render khác nó chỉ trả về 1 function cũ
+  // do empty dependences
+  // trả về 1 giá trị memoized value
 
   return (
     <div>
