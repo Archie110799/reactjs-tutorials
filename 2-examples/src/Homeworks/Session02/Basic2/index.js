@@ -4,14 +4,17 @@ import styles from "./basic2.module.css";
 import { AiFillStar } from "react-icons/ai";
 import "./styles.css";
 
+const MAX_STAR = 5
+
 export default function Basic2_S2() {
-  const product = {
+  const product = [{
     image: img,
     shop: "YOUNG SHOP",
     name: "Samsung UHD TV 24inch",
-    star: 4,
+    star: MAX_STAR,
     money: 599,
-  };
+  },]
+  
   const renderStar = (star) => {
     let content = [];
 
@@ -20,7 +23,7 @@ export default function Basic2_S2() {
       // content.push(<i class="bi bi-star-fill"></i>);
     }
 
-    for (let index = star; index < 5; index++) {
+    for (let index = star; index < MAX_STAR; index++) {
       content.push(<i class="bi bi-star"></i>);
     }
 

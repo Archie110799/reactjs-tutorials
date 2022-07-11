@@ -17,7 +17,6 @@ import Basic from './Examples/Hooks/useRef-hook/Basic'
 function App() {
   return (
     <>
-      {/* <h1>ABC</h1> */}
       {/* <JSX /> */}
       {/* <ES6 /> */}
       {/* <StateFunction /> */}

@@ -21,7 +21,7 @@ export default class LikeBtn extends Component {
       <>
         <div onClick={this.setLike}>
             {this.state.like ? <AiFillLike /> : <AiOutlineLike />}
-          
+            
             {this.state.like && <AiFillLike />}
             {!this.state.like && <AiOutlineLike />}
         </div>
