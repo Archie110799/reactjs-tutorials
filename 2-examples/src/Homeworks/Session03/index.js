@@ -14,10 +14,10 @@ function Session03() {
     <div>
       {/* <LikeButton /> */}
       {/* <LikeBtn /> */}
-      <Rating />
+      {/* <Rating /> */}
       {/* <RatingButton /> */}
       {/* <HandleEvent /> */}
-      {/* <Accordions /> */}
+      <Accordions />
       {/* <Gallery /> */}
       {/* <Tab /> */}
       {/* <MusicPlayer /> */}

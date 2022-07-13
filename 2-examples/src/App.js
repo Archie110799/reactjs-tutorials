@@ -13,6 +13,11 @@ import StateClass from './Examples/State/stateClass'
 import Session02 from './Homeworks/Session02'
 import Session03 from './Homeworks/Session03'
 import Basic from './Examples/Hooks/useRef-hook/Basic'
+import UseEffect from './Examples/Hooks/useEffect'
+import ListAccordions from './Homeworks/Session03/Accordions/ListAccordions'
+
+import axios from "axios";
+axios.defaults.baseURL = 'http://localhost:3000/'
 
 function App() {
   return (
@@ -29,8 +34,9 @@ function App() {
       {/* <EventHandler /> */}
       {/* <ConditionalRenderingExamples /> */}
       {/* <Session02 /> */}
-      <Session03/>
-     
+      {/* <Session03/> */}
+      {/* <UseEffect /> */}
+      <ListAccordions />
     </>
   );
 }

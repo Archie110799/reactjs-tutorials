@@ -49,6 +49,7 @@ function Tab({ tabs = defaultTabs }) {
           );
         })}
       </div>
+      
       <div className={styles.tab_content}>
         {tabs.map((item, index) => {
           if (index === selectedTabIndex) {

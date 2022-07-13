@@ -19,7 +19,7 @@ function Counter() {
   //Effect
   //Clean up (in return)
   useEffect(() => {
-    //every
+    // every
     // component didmount, didupdate
     console.log('🔥Component update');
   });
