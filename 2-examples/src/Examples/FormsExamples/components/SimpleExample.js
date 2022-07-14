@@ -16,8 +16,8 @@ function SimpleExample() {
   };
 
   return (
-    <div style={{ display: 'flex', padding: 24 }}>
-      <div style={{}}>
+    <div className=' d-flex justify-content-center m-3'>
+      <div className='border border-light rounded p-3'>
         <form onSubmit={handleSubmit}>
           <input
             placeholder='Name'
@@ -37,7 +37,7 @@ function SimpleExample() {
               setGender('man');
             }}
           />
-          <label for='gender'>Man</label>
+          <label htmlFor='gender'>Man</label>
 
           <input
             type='radio'

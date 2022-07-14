@@ -15,6 +15,8 @@ import Session03 from './Homeworks/Session03'
 import Basic from './Examples/Hooks/useRef-hook/Basic'
 import UseEffect from './Examples/Hooks/useEffect'
 import ListAccordions from './Homeworks/Session03/Accordions/ListAccordions'
+import FormsExamples from './Examples/FormsExamples'
+import FormikExamples from './Examples/FormikExamples'
 
 import axios from "axios";
 axios.defaults.baseURL = 'http://localhost:3000/'
@@ -36,7 +38,9 @@ function App() {
       {/* <Session02 /> */}
       {/* <Session03/> */}
       {/* <UseEffect /> */}
-      <ListAccordions />
+      {/* <ListAccordions /> */}
+      {/* <FormsExamples /> */}
+      <FormikExamples />
     </>
   );
 }

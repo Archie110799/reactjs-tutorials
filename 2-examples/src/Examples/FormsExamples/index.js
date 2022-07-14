@@ -5,6 +5,7 @@ import MultipleInputFieldsExample from './components/MultipleInputFieldsExample'
 function FormsExamples() {
   return (
     <div>
+      <MultipleInputFieldsExample/>
       <SimpleExample />
     </div>
   );

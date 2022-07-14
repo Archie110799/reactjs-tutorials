@@ -17,8 +17,8 @@ function Session03() {
       {/* <Rating /> */}
       {/* <RatingButton /> */}
       {/* <HandleEvent /> */}
-      <Accordions />
-      {/* <Gallery /> */}
+      {/* <Accordions /> */}
+      <Gallery />
       {/* <Tab /> */}
       {/* <MusicPlayer /> */}
     </div>

@@ -65,7 +65,6 @@ function MusicPlayer({ max = 2 }) {
         onClick={(song) => {
           const i = songs.findIndex((s) => s.id === song.id);
           setSelectedSongIndex(i);
-          // setSelectedSong(song);
           refPlayer.current.play();
         }}
       />
