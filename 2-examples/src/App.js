@@ -17,6 +17,7 @@ import UseEffect from './Examples/Hooks/useEffect'
 import ListAccordions from './Homeworks/Session03/Accordions/ListAccordions'
 import FormsExamples from './Examples/FormsExamples'
 import FormikExamples from './Examples/FormikExamples'
+import MusicPlayerSlider from './Examples/MUI'
 
 import axios from "axios";
 axios.defaults.baseURL = 'http://localhost:3000/'
@@ -39,8 +40,9 @@ function App() {
       {/* <Session03/> */}
       {/* <UseEffect /> */}
       {/* <ListAccordions /> */}
-      {/* <FormsExamples /> */}
-      <FormikExamples />
+      <FormsExamples />
+      {/* <FormikExamples /> */}
+      {/* <MusicPlayerSlider /> */}
     </>
   );
 }

@@ -59,6 +59,7 @@ function SimpleExample() {
           />
           <label htmlFor='gender'>Unknown</label>
           <hr />
+          
           <input
             type='checkbox'
             name='children'
@@ -67,6 +68,7 @@ function SimpleExample() {
               setChildren(e.target.checked);
             }}
           />
+          <label htmlFor='children'>Children</label>
           <hr />
           <select
             name='country'
