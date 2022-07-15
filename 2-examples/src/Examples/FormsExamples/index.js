@@ -7,8 +7,8 @@ function FormsExamples() {
   return (
     <div>
       {/* <MultipleInputFieldsExample/> */}
-      <SimpleExample />
-      {/* <ReactHookForm /> */}
+      {/* <SimpleExample /> */}
+      <ReactHookForm />
     </div>
   );
 }

@@ -12,6 +12,7 @@ function MultipleInputFieldsExample() {
 
   const handleChange = (e) => {
     const x = { id: 1, name: "Peter", age: 30, address: "DANANG" };
+    console.log(...x); 
     // const y = { ...x, name: 'John' };
     // const y = { id: 1, name: 'John', age: 30, address: 'DANANG' };
     // const y = x;
@@ -20,7 +21,7 @@ function MultipleInputFieldsExample() {
     if (e.target.type === "checkbox") {
       setInputs((values) => ({ ...values, [e.target.name]: e.target.checked }));
     } else {
-      setInputs((values) => ({ ...values, [e.target.name]: e.target.value }));     console.log(inputs);
+      setInputs((values) => ({ ...values, [e.target.name]: e.target.value })); 
     }
   };
 
