@@ -89,3 +89,20 @@ git add .
 git commit -m 'init code'
 git push
 git fetch
+
+
+# GIT
+## git add .
+Thêm toàn bộ những file thay đổi
+## git commit -m 'text'
+Tạo commit
+## git push
+Đẩy code lên github
+## git log --oneline
+Check lịch sử commit ở local
+## git reset 
+Reset lại commit trước đó
+## JSON SERVER
+install : npm install json-server axios —save-dev
+config  : "mock-server": "json-server ./mock-db/db.json",
+run     : npm run mock-server

@@ -69,18 +69,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-# GIT
-## git add .
-Thêm toàn bộ những file thay đổi
-## git commit -m 'text'
-Tạo commit
-## git push
-Đẩy code lên github
-## git log --oneline
-Check lịch sử commit ở local
-## git reset 
-Reset lại commit trước đó
-## JSON SERVER
-install : npm install json-server axios —save-dev
-config  : "mock-server": "json-server ./mock-db/db.json",
-run     : npm run mock-server
