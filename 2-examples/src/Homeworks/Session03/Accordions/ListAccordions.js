@@ -14,7 +14,7 @@ function ListAccordions() {
     <div>
       {dumpData.map((item, index) => {
         return (
-          <AccordionItem key={`item-${index}`} index={index} item={item} />
+          <AccordionItem indexClicked={indexClicked} key={`item-${index}`} index={index} item={item} />
         );
       })}
     </div>

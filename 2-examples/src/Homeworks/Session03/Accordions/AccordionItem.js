@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 export default function AccordionItem(props) {
-  const { item, index } = props;
+  const { item, index, indexClicked } = props;
   const [isActive, setIsActive] = useState(false);
   return (
     <div

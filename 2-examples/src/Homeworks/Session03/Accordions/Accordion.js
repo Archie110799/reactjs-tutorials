@@ -8,9 +8,6 @@ export default function Accordion(props) {
       <div className="accordion-title" onClick={() => setIsActive(!isActive)}>
         <div className="text-uppercase font-weight-bold">{item?.title}</div>
       </div>
-
-      state: {isActive ? 'true' : 'false'} - index: {index}
-
       
       {/* {isActiveProps === index && (
         <div className={`accordion-content`}>{item?.content}</div>
