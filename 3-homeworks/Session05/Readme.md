@@ -1,10 +1,6 @@
-# Hướng dẫn làm bài tập
+## 1. Basic stateful components (React Hooks)
 
-# PHẦN BẮT BUỘC:
-
-## 1. Basic stateful components
-
-# Yêu cầu sử dụng Class component
+# Yêu cầu sử dụng Functional component
 
 1. Like button
 2. Rate button
@@ -17,9 +13,3 @@
 4. Bài tập TABS như [http://foundry.mediumra.re/elements-tabs.html]
 5. Bài tập ACCORDIONS như [http://foundry.mediumra.re/elements-accordions.html]
 6. Bài tập GALLERY như [http://foundry.mediumra.re/elements-galleries.html]
-
-# PHẦN NÂNG CAO:
-
-1. Làm 1 music player
-
-![](https://github.com/ngothanhtung/reactjs-tutorials/blob/master/3-Homeworks/Session03/MusicPlayer.png?raw=true)
