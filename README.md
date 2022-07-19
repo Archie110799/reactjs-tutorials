@@ -103,6 +103,6 @@ Check lịch sử commit ở local
 ## git reset 
 Reset lại commit trước đó
 ## JSON SERVER
-install : npm install json-server axios —save-dev
+install : npm install json-server axios -- save-dev
 config  : "mock-server": "json-server ./mock-db/db.json",
 run     : npm run mock-server
