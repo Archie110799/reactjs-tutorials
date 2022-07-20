@@ -1,6 +1,6 @@
 # Router: Component bao bọc tất cả các component khác của Routing
 - Có nhiều loại:
-+ BrowserRouter
++ BrowserRouter 
 + HashRouter : Loại routing có dấu #
 + StaticRouter: Thường dùng cho SSR (Server side rendering)
 + MemoryRouter: Thường dùng cho testing

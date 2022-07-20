@@ -8,7 +8,7 @@
             "name": "Lula Russel",
             "postCode": "12771",
             "address": "address 1",
-            "dob": 1658300304,
+            "dob": "11-07-1995",
             "email": "Haylie.Torphy@hotmail.com",
             "gender": false,
             "phone": "(354) 813-2316 x476",

@@ -36,7 +36,8 @@ function Session08() {
           {/* CUSTOMER ROUTES */}
           <Route path="customer" element={<Customer />}>
             <Route index element={<CustomerList />} />
-            <Route path="list" element={<CustomerList />} />
+            {/* /customer/list */}
+            <Route path="list" element={<CustomerList />} /> 
             <Route path="detail/:id" element={<CustomerForm />} />
             <Route path="form" element={<CustomerForm />} />
             <Route path="edit/:id" element={<CustomerForm />} />
@@ -63,6 +64,7 @@ function Session08() {
             }
           />
         </Routes>
+
       </BrowserRouter>
     </div>
   );

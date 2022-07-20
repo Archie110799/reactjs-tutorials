@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
-import './styles.css'
+import "./styles.css";
 
 export default function Navigation() {
   return (
@@ -19,7 +19,7 @@ export default function Navigation() {
                   aria-expanded="false"
                   aria-label="Toggle navigation"
                 >
-                  
+
                 </button>
                 <div
                   className="collapse navbar-collapse"

@@ -16,7 +16,7 @@ export default function FeatureField(props) {
         className="btn btn-success mx-3"
         to={`/${name}/edit/${itemId}`}
       >
-        Detail
+        Edit
       </Link>
       <button
         type="button"
