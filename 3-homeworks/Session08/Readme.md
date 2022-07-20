@@ -1,5 +1,6 @@
 # Json-server (https://mockapi.io)
- 
+- Tạo Project có tên: RJB22_<name>
+- Tạo 2 resource như sau:
 {
     "customer" : [
         {
@@ -33,13 +34,14 @@
 - Products : List Products
 
 # Tại List
-Show table bao gồm thông tin của object. 
+Show table bao gồm thông tin của list object. 
 Đồng thời có: 
 + Nút detail -> Điều hướng đến object Detail
 + Nút delete -> Delete object -> Show Toast
 
 # Tại Form đăng ký
 + Các field phù hợp phục vụ cho Register object 
+* Lưu ý: id, createdAt là 2 trường k cần sent data, mock-server sẽ tự gen 2 trường này 
 
 # Tại Form Detail
 + Show UI giống form đăng ký. 
