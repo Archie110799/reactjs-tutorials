@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
+import './styles.css'
 
 export default function Navigation() {
   return (
@@ -73,6 +74,7 @@ export default function Navigation() {
                           <NavLink
                             className={`dropdown-item`}
                             to="/customer/list"
+                            activeclassname="active-menu"
                           >
                             List
                           </NavLink>

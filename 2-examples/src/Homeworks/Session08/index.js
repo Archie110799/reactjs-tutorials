@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 import Customer from "./pages/Customer";
 import CustomerForm from "./pages/Customer/pages/CustomerForm";
@@ -14,6 +14,8 @@ import ProductDetail from "./pages/Product/pages/ProductDetail";
 import Home from "./pages/Home";
 import Navigation from "./components/Navigation";
 
+const TOKEN = undefined;
+
 function Session08() {
   return (
     <div>
@@ -21,28 +23,34 @@ function Session08() {
         {/* NAVIGATION */}
         <Navigation />
 
-        {/* ROUTES SETTINGS */}
+        {/* ROUTES SETTINGS (instead of "Switch" react-router) */}
         <Routes>
           <Route path="/" element={<Home />} />
 
+          {/* For react-router-dom v6, simply replace Redirect with Navigate */}
+          <Route
+            path="/auth"
+            element={TOKEN ? <Navigate to="/" /> : "AuthPage"}
+          />
+
           {/* CUSTOMER ROUTES */}
-          <Route path="/customer" element={<Customer />}>
+          <Route path="customer" element={<Customer />}>
             <Route index element={<CustomerList />} />
-            <Route path="/customer/list" element={<CustomerList />} />
-            <Route path="/customer/detail/:id" element={<CustomerForm />} />
-            <Route path="/customer/form" element={<CustomerForm />} />
-            <Route path="/customer/edit/:id" element={<CustomerForm />} />
-            <Route path="/customer/delete/:id"/>
+            <Route path="list" element={<CustomerList />} />
+            <Route path="detail/:id" element={<CustomerForm />} />
+            <Route path="form" element={<CustomerForm />} />
+            <Route path="edit/:id" element={<CustomerForm />} />
+            <Route path="delete/:id" />
           </Route>
 
           {/* Product ROUTES */}
-          <Route path="/product" element={<Product />}>
+          <Route path="product" element={<Product />}>
             <Route index element={<ProductList />} />
-            <Route path="/product/list" element={<ProductList />} />
-            <Route path="/product/detail/:id" element={<ProductForm />} />
-            <Route path="/product/form" element={<ProductForm />} />
-            <Route path="/product/edit/:id" element={<ProductForm />} />
-            <Route path="/product/delete/:id"/>
+            <Route path="list" element={<ProductList />} />
+            <Route path="detail/:id" element={<ProductForm />} />
+            <Route path="form" element={<ProductForm />} />
+            <Route path="edit/:id" element={<ProductForm />} />
+            <Route path="delete/:id" />
           </Route>
 
           {/* NO MATCH ROUTE */}
