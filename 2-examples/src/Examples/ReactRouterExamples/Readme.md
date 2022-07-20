@@ -11,7 +11,7 @@
 
 React router v6 doesn't support exact anymore.
 # Switch: Nhóm gom nhiều Route, đảm bảo chỉ render route đầu tiên match path
-- For react-router-dom v6 : instead of "Switch" react-router
+- For react-router-dom v6 : Routes instead of "Switch" react-router
 # Redirect: điều hướng từ Path này sang Path khác
 - For react-router-dom v6, simply replace Redirect with Navigate
 # Link: Đi tới Path tương ứng
