@@ -81,15 +81,13 @@ export default function CustomerForm() {
 
   const postData = (data) => {
     let dumpData = {
-      createdAt: "2022-07-18T14:19:08.025Z",
-      name: "Darlene Barrows",
+      name: data?.address1,
       postCode: "58472",
-      address: "address 2",
-      dob: 1658206805,
-      email: "Kaia77@hotmail.com",
+      address: data?.address2,
+      dob: "11/01/1995",
+      email: data?.email,
       gender: false,
       phone: "1-832-736-9208 x651",
-      id: "1",
     };
     axios
       .post(
@@ -106,7 +104,6 @@ export default function CustomerForm() {
 
   const putData = (data) => {
     let dumpData = {
-      createdAt: "2022-07-18T14:19:08.025Z",
       name: "Darlene Barrows1",
       postCode: "1111",
       address: "address 2",
@@ -114,7 +111,6 @@ export default function CustomerForm() {
       email: "Kaia77@hotmail.com",
       gender: false,
       phone: "1-832-736-9208 x651",
-      id: "1",
     };
     axios
       .put(
