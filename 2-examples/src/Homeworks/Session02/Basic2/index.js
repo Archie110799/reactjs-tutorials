@@ -20,11 +20,11 @@ export default function Basic2_S2() {
 
     for (let index = 0; index < star; index++) {
       content.push(<AiFillStar/>);
-      // content.push(<i class="bi bi-star-fill"></i>);
+      // content.push(<i className="bi bi-star-fill"></i>);
     }
 
     for (let index = star; index < MAX_STAR; index++) {
-      content.push(<i class="bi bi-star"></i>);
+      content.push(<i className="bi bi-star"></i>);
     }
 
     content.push(<span>&nbsp; {star}</span>);
