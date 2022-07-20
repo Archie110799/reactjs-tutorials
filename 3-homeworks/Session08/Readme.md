@@ -1,5 +1,5 @@
 # Json-server (https://mockapi.io)
-- Tạo Project có tên: RJB22_<name>
+- Tạo Project
 - Tạo 2 resource như sau:
 {
     "customer" : [
