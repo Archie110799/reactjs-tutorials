@@ -14,6 +14,7 @@ function CreateUser() {
   return (
     <div>
       <button
+        className='btn btn-dark'
         disabled={loading}
         onClick={() => {
           const user = {

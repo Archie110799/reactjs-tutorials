@@ -14,13 +14,13 @@ function Users() {
   return (
     <div>
       {loading && <div>Loading ...</div>}
-      <h1>Users</h1>
-      <table className='table table-bordered table-hover'>
+      <h1 className='m-3 text-muted'>Users</h1>
+      <table className='table table-hover'>
         <thead>
           <tr>
             <th></th>
             <th>Id</th>
-            <th>Username</th>
+            <th>User Name</th>
             <th>Full Name</th>
             <th>Email</th>
             <th></th>
@@ -31,7 +31,7 @@ function Users() {
             <tr key={index}>
               <td>
                 <button
-                  className='btn btn-sm btn-danger'
+                  className='btn btn-info'
                   onClick={() => {
                     dispatch(selectUser(item));
                   }}
@@ -45,6 +45,7 @@ function Users() {
               <td>{item.email}</td>
               <td>
                 <button
+                  className='btn btn-danger'
                   onClick={() => {
                     dispatch(deleteUserAsync(item.id));
                   }}
