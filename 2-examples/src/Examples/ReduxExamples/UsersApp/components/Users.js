@@ -39,14 +39,14 @@ function Users() {
                   Select
                 </button>
               </td>
-              <td>{item._id}</td>
-              <td>{item.username}</td>
+              <td>{item.id}</td>
+              <td>{item.userName}</td>
               <td>{item.fullName}</td>
               <td>{item.email}</td>
               <td>
                 <button
                   onClick={() => {
-                    dispatch(deleteUserAsync(item._id));
+                    dispatch(deleteUserAsync(item.id));
                   }}
                 >
                   Delete

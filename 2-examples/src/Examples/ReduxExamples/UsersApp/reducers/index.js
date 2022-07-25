@@ -45,7 +45,7 @@ const userReducer = (state = defaultState, action) => {
       return { ...state, loading: true };
     case ActionTypes.USER_DELETE_SUCCESS:
       const usersAfterDeleted = state.users.filter((element) => {
-        return element._id !== action.id;
+        return element.id !== action.id;
       });
 
       return {

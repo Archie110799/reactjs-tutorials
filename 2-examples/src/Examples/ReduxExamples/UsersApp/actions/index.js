@@ -2,13 +2,11 @@ import * as ActionTypes from '../constants/actionTypes';
 
 // AXIOS
 import axios from 'axios';
-const baseUrl = 'https://training.softech.cloud/api/training/users';
-const token = 'eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJuYW1lIjoidHVuZ250IiwiZnVsbG5hbWUiOiJOZ8O0IFRoYW5oIFTDuW5nIiwiZW1haWwiOiJ0dW5nbnRAc29mdGVjaC5lZHUudm4ifSwiaWF0IjoxNjU2MTUzNTI5LCJleHAiOjE2NTYyMzk5MjksImF1ZCI6InNvZnRlY2guY2xvdWQiLCJpc3MiOiJzb2Z0ZWNoLmNsb3VkIiwic3ViIjoiNjJiMmQ1MGViNmNmZWQxYTMyNDAyZGU0In0.lnbsAYX1lMHuI0WAK_x88KI3Osc11_anmWeOId6zUzrDTjht06LIF6Z04n8XoilSG1l-jC68RroQocozypfuHQ';
+const baseUrl = 'https://62ce2903066bd2b699309018.mockapi.io/api/v1/users';
 const client = axios.create({
   baseURL: baseUrl,
   headers: {
-    'Content-Type': 'application/json',
-    Authorization: 'Bearer ' + token,
+    'Content-Type': 'application/json'
   },
 });
 
@@ -51,9 +49,9 @@ export const createUserAsync = (user) => {
   return (dispatch) => {
     dispatch(createUser_Pending());
     client
-      .post('/register', user)
+      .post('/', user)
       .then((response) => {
-        dispatch(createUser_Success(response.data.result.data));
+        dispatch(createUser_Success(response.data));
       })
       .catch((error) => {
         dispatch(createUser_Error(error));

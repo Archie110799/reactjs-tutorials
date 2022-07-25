@@ -17,10 +17,10 @@ function CreateUser() {
         disabled={loading}
         onClick={() => {
           const user = {
-            username: 'tungnt1234',
-            email: 'tungnt1234@softech.edu.vn',
+            userName: 'manhph',
+            email: 'manhph@softech.edu.vn',
             password: '123456789',
-            fullName: 'Ngô Thanh Tùng',
+            fullName: 'Pham Hung Manh',
           };
           dispatch(createUserAsync(user));
         }}
