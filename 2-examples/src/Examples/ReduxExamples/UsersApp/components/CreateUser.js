@@ -17,11 +17,12 @@ function CreateUser() {
         className='btn btn-dark'
         disabled={loading}
         onClick={() => {
+          let randomName = (Math.random() + 1).toString(36).substring(7);
           const user = {
-            userName: 'manhph',
-            email: 'manhph@softech.edu.vn',
+            userName: randomName,
+            email: randomName + '@softech.edu.vn',
             password: '123456789',
-            fullName: 'Pham Hung Manh',
+            fullName: `${randomName}-${randomName}`,
           };
           dispatch(createUserAsync(user));
         }}

@@ -18,7 +18,7 @@ export const getUsersAsync = () => {
   return (dispatch) => {
     dispatch(getUsers_Pending());
     client
-      .get('/')
+      .get('/?page=4&limit=15')
       .then((response) => {
         dispatch(getUsers_Success(response.data));
       })
