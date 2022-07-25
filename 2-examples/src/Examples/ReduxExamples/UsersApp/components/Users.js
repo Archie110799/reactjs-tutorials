@@ -13,7 +13,7 @@ function Users() {
 
   return (
     <div>
-      {loading && <div>Loading ...</div>}
+      {loading && <small className='text-danger'>Loading ...</small>}
       <h1 className='m-3 text-muted'>Users</h1>
       <table className='table table-hover'>
         <thead>
