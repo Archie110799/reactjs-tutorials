@@ -21,6 +21,7 @@ import MusicPlayerSlider from './Examples/MUI'
 import ReactRouterExamples from './Examples/ReactRouterExamples'
 import Session08 from './Homeworks/Session08'
 import ReduxExamples from './Examples/ReduxExamples'
+import End from './End'
 
 import axios from "axios";
 axios.defaults.baseURL = 'http://localhost:3000/'
@@ -48,7 +49,8 @@ function App() {
       {/* <MusicPlayerSlider /> */}
       {/* <ReactRouterExamples /> */}
       {/* <Session08 /> */}
-      <ReduxExamples />
+      {/* <ReduxExamples /> */}
+      <End/>
     </>
   );
 }

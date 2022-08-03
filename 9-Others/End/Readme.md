@@ -1,14 +1,15 @@
 # Sử dụng Redux
 Tạo Trang web quản lý Supplier như sau:
 Trang web bao gồm:
-- Navifation gồm 2 item: List, Form
+- Navigation gồm 2 item: List, Form
 - Màn hình List : Như hình list.png
 - Màn hình Form : Như hình form.png 
-+ Khi có branch No -> Click btn Gen address, Field Address sẽ có giá trị tương ứng như sau:
++ Khi có branch No -> Click btn Gen address, 
+Field Address sẽ có giá trị tương ứng như sau:
 001 -> 43 Domenic Horse
 002 -> 92 Run Bear
 Others -> 75 Chauncey Lion
-+ Field branch No: max 5 kí tự không.
++ Field branch No: max 5 kí tự.
 + Btn Gen address chỉ enable khi Field branch No có giá trị khác rỗng
 
 {

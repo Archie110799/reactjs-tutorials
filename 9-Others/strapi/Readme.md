@@ -1,0 +1,1 @@
+# Doc: https://docs.strapi.io/developer-docs/latest/setup-deployment-guides/installation/cli.html#creating-a-strapi-project 
