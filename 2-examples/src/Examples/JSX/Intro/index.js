@@ -57,7 +57,7 @@ let introduction = React.createElement(
 
 function render(user) {
   return (
-    <>
+    <React.Fragment>
       <div className="card" style={cardStyle}>
         <img
           className="card-img-top"
@@ -72,7 +72,7 @@ function render(user) {
           {gotoProfile}
         </div>
       </div>
-    </>
+    </React.Fragment>
   );
 }
 

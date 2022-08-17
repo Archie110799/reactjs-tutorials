@@ -27,7 +27,8 @@
    - Theme: Dracula Official (Dracula Theme)
 
 7. Các tài nguyên
-
+   - Bootstrap: https://www.npmjs.com/package/bootstrap/v/4.6.0#quick-start
+     > Add index.js: import 'bootstrap/dist/css/bootstrap.min.css'
    - Avatars: https://pravatar.cc/
    - Icons: https://react-icons.github.io/react-icons/
    - Color:
@@ -82,6 +83,9 @@
 - MUI offers a comprehensive suite of UI tools to help you ship new features faster.
 - Start with Material UI, our fully-loaded component library, or bring your own design system to our production-ready components.
 
+
+# GIT
+## Add repo
 git init
 git remote add origin <HTTPS>
 git checkout -b  master
@@ -89,9 +93,6 @@ git add .
 git commit -m 'init code'
 git push
 git fetch
-
-
-# GIT
 ## git add .
 Thêm toàn bộ những file thay đổi
 ## git commit -m 'text'
